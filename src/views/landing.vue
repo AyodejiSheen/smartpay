@@ -458,9 +458,8 @@
 </template>
 
 <script>
-import input from '../../../task-app/src/components/input.vue'
     export default {
-  components: { input },
+
         name:'LandingPage',
 
         data() {
