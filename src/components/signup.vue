@@ -137,7 +137,6 @@ export default {
 input,
 select {
   height: 40px;
-  border-radius: 100px;
   font-size: 14px;
 }
 
@@ -148,9 +147,6 @@ button {
   font-size: 18px;
 }
 
-.tag {
-  font-family: cursive;
-}
 
 .info {
   font-size: 13px;

@@ -2,7 +2,7 @@
   <div id="home">
     <div class="container-fluid p-3">
       <div class="row mx-auto">
-        <div class="col-md-6 brand-section mx-auto p-3 pr-5">
+        <div class="col-xl-6 brand-section mx-auto p-3 pr-5">
           <div>
             <img src="../assets/smartpay/iphone1.png" class="iphone"/>
             <!-- <a class="navbar-brand"><img src="../assets/smartpay/Logocolor.png" class="brand-logo mt-5"/></a> -->
@@ -29,7 +29,7 @@
 
         </div>
 
-        <div class="col-md-6 shadow log-section mx-auto">
+        <div class="col-xl-6 shadow log-section mx-auto">
           <v-alert border="left" colored-border class="shadow font-weight-bold mb-5 alert text-dark" color="#9C27B0" elevation="2" >Welcome To SmartPay</v-alert>
           <div class="mb-2">
             <router-link to="/app/signin"><button class="btn btn-primary btn-signin mr-4 ">Sign in</button></router-link>
@@ -83,10 +83,10 @@ export default {
     }
 
   .btn-signin, .btn-signup{
-    padding:15px 30px 15px 30px;
+    padding:8px 30px 8px 30px;
     width:200px;
     border-radius: 50px;
-    font-size: 25px;
+    font-size: 16px;
   }
 
   .log-section{
@@ -101,14 +101,19 @@ export default {
 
 
       @media (min-width:300px) and (max-width:450px) {
+
+        .iphone{
+          display:none
+        }
+
         .brand-name{
           font-size: 32px;
         }
 
-.note{
-  width:270px;
-  font-size: 14px;
-}
+      .note{
+        width:270px;
+        font-size: 14px;
+      }
         .brand-section{
           /* background-image: url('../assets/OLO2ED0.jpg'); */
           padding-right: 16px!important;
@@ -120,10 +125,10 @@ export default {
         }
 
     .btn-signin, .btn-signup{
-    padding:8px 12px 8px 12px;
-    width:120px;
+    padding:6px 12px 6px 12px;
+    width:11  0px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 14px;
     }
 
     .btn-signin{
@@ -163,6 +168,13 @@ export default {
 
 
 
+    }
+
+
+    @media (min-width:460px) and (max-width:1024px){
+              .iphone{
+          display:none
+        }
     }
 
   

@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
   #App{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: poppins;
   }
 
   .twitter{

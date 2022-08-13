@@ -192,16 +192,12 @@ export default {
         color: blueviolet;
         width: 280px;
     }
-    .carousel-image{
-        height:400px;
-    }
 
     .user-name{
         font-size: 20px;
     }
 
     .amount{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 40px;
         color:#9C27B0
     }
@@ -211,7 +207,6 @@ export default {
         width:230px;
         line-height: 22px;
         padding: 20px 60px 20px 60px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     .trans-history{

@@ -82,7 +82,6 @@ export default {
 
     input{
         height: 50px;
-        border-radius: 100px;
         margin-bottom: 20px!important;
     }
 
