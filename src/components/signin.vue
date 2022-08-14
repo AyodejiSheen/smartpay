@@ -1,11 +1,11 @@
 <template >
     <div>
-        <p class="mb-4  mt-5 tag"> <b>Enter Credentials to sign-in</b></p>
-        <p class="info mt-3">{{infoMsg}}</p>
+        <p class="mb-4  mt-5 text-center"> <b>Enter Credentials to sign-in</b></p>
+        <p class="info mt-3 text-center">{{infoMsg}}</p>
         <form class="col-11 mx-auto" @submit.prevent="loginUser">
             <input type="email" name="email" placeholder="Enter your Email Address"  v-model="email" class="form-control mb-4"/>
             <input type="password" name="password" placeholder="Enter  your Password" v-model="password" class="form-control mb-4"/>
-            <button class="btn-block text-white shadow btn">sign me in </button>
+            <button class="btn-block text-white shadow btn sign-in">sign me in </button>
         </form>
     </div>
 </template>
@@ -80,47 +80,24 @@ export default {
 
 <style scoped>
 
-    input{
-        height: 50px;
-        margin-bottom: 20px!important;
-    }
+.btn, .form-control{
+  outline: none;
+  box-shadow: none;
+}
+.sign-in{
+    background-color: #9C27B0;
+}
 
-    button{
-        background-color: #9C27B0;
-        border-radius: 100px;
-        height: 50px;
-        font-size: 18px;
-    }
+.info{
+    font-size: 12px;
+}
 
-     .info{
-      font-size: 13px;
-      color: green;
-    }
+input{
+    height: 40px;
+    font-size: 13px;
+}
 
 
-     @media (min-width:300px) and (max-width:450px) {
-            input{
-                height: 40px;
-                border-radius: 20px;
-            }
-
-            button{
-                height: 40px;
-                border-radius: 20px;
-                font-size: 16px;
-                margin-top: 10px!important;
-            }
-
-            .tag{
-                margin: 50px 0px 20px 0px!important;
-                font-size: 14px;
-                font-weight: 300!important ;
-            }
-
-            .info{
-                font-size: 10px;
-            }
-    }
 
 
 </style>

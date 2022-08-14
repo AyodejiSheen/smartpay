@@ -482,7 +482,10 @@
 
 <style scoped>
 
-
+.btn{
+  outline: none;
+  box-shadow: none;
+}
     .font-weight-bolder{
         font-size: 20px;
     }

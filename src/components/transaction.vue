@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="view-history">
         <div class="text-center bg-dark page-title mx-auto  p-2">
         <p class="lead  text-white mb-0 ">TRANSACTION HISTORY</p>
         </div>
@@ -72,6 +72,7 @@ export default {
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
+
 
 
 
