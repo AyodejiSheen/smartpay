@@ -51,6 +51,9 @@ export default {
   data() {
     return {
       authout: JSON.parse(localStorage.getItem("Checking")),
+
+
+
     }
   },
 
@@ -113,6 +116,8 @@ export default {
 .btn:hover {
   background-color: white;
   color: black !important;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .navbar-light .navbar-toggler-icon {

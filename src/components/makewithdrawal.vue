@@ -2,12 +2,12 @@
     <div id="makedeposit">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                 <v-alert border="left" colored-border class="shadow alert pl-4  mt-5 text-dark" color="#9C27B0" elevation="2" >
                 <p class="mb-0 font-weight-bold ml-5">Account Balance: <br> <span class="font-weight-bold amount">{{"₦" + getBal + ":00"}}</span></p></v-alert>
             </div>
 
-            <div class="col-md-8 shadow form-section mx-auto pt-4">
+            <div class="col-lg-8 shadow form-section mx-auto mt-4 py-4">
                  <p class="info text-center pt-4">{{infoMsg}}</p>
                 <p class="display-4 mb-0 text-center mt-3">MAKE WITHDRAWAL</p>
                 <form class="form-class mx-auto shadow p-5" @submit.prevent="makeWithdraw">
@@ -140,9 +140,6 @@ export default {
             margin-top: 0px!important;
         }
 
-        .form-section{
-            padding-top: 0px!important;
-        }
 
         .form-class{
             width: 280px;
@@ -152,6 +149,13 @@ export default {
         input{
             font-size: 12px;
         }
+    }
+
+    @media (min-width:1024px) and (max-width:1439px){
+       .alert{
+        width: max-content!important;
+
+       } 
     }
 
 

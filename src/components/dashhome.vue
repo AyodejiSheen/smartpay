@@ -22,13 +22,13 @@
                         <p class="mb-0">USD: <span>{{ "$ " + getusd.toFixed(2) }}</span></p>
                     </div>
 
-                    <div class="updates">
+                    <!-- <div class="updates">
                         <p class="text-center font-weight-bold trans-history mt-4 mb-0">notifications</p>
                         <div class="notfy shadow p-3 rounded text-center mx-auto"
                             v-for="(notif, index) in this.notyArr.slice().reverse()" :key="index">
                             <p class="mb-2">{{ notif }}</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="col-lg-6  mid-section offset-lg-3 order-3 order-lg-2">
@@ -41,7 +41,7 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/Iphone.png"
+                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/slide 1.jpg"
                                     alt="First slide">
                                 <div class="carousel-caption">
                                     <!-- <h2>ABEG-eXTRA</h2> -->
@@ -50,25 +50,25 @@
                             </div>
 
                             <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/image.jpg"
+                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/slide 2.jpg"
                                     alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/Credit-Card.png"
+                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/slide 3.jpg"
                                     alt="Second slide">
                             </div>
 
                             <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/images (1).jpeg"
+                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/slide 4.jpg"
                                     alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/images (3).jpeg"
+                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/slide 3.jpg"
                                     alt="Third slide">
                             </div>
 
                             <div class="carousel-item">
-                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/images (2).jpeg"
+                                <img class="d-block w-100 carousel-image" src="../assets/smartpay/slide 2.jpg"
                                     alt="Third slide">
                             </div>
                         </div>
@@ -86,7 +86,7 @@
 
 
                     <div class="row mx-auto">
-                        <div class="col-lg-8 mx-auto">
+                        <div class="col-lg-8 mx-auto mt-4">
                             <p class="tran-details text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor at
                                 auctor urna nunc id. Commodo sed egestas egestas fringilla. Vulputate sapien nec
@@ -99,7 +99,7 @@
 
 
                 <div class="col-lg-3  out-section offset-lg-9 order-2 order-lg-3">
-                    <div>
+                    <div class="mt-4">
                         <p class="text-center font-weight-bold trans-history">Recent Transactions</p>
 
                         <v-card class="mx-auto mb-2" v-for="(trans, index) in this.transArr.slice().reverse()"
@@ -228,10 +228,17 @@ p > .amount{
     padding: 6px;
 }
 
+.mid-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 @media (min-device-width:1024px) {
 
     .in-section, .mid-section {
         position: fixed;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 
