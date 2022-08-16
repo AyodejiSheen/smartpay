@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div class="container-fluid p-3">
-      <div class="row mx-auto">
+      <div class="mx-auto">
         <div class="col-xl-6 brand-section mx-auto p-3 pr-5">
           <div>
             <img src="../assets/smartpay/iphone1.png" class="iphone" />
